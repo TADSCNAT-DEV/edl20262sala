@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.edl20262</groupId>
+    <artifactId>edl20262</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>edl20262</name>
+    <description>Projeto base para demonstrações de estruturas de dados lineares em Java.</description>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <exec.mainClass>br.com.edl20262.aplicacoes.ListaDemoApplication</exec.mainClass>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>${exec.mainClass}</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>lista-demo</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.ListaDemoApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
+            <id>pilha-demo</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.PilhaDemoApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
+            <id>fila-demo</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.FilaDemoApplication</exec.mainClass>
+            </properties>
+        </profile>
+    </profiles>
+</project>
