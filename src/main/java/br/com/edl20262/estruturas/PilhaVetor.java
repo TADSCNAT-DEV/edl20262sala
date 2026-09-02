@@ -7,10 +7,12 @@ public class PilhaVetor<T> {
         vetor=new Object[tamanho];
     }
 
-    public void empilhar(T elemento){
+    public boolean empilhar(T elemento){
         if (!this.estaCheia()){
             vetor[++topo]=elemento;
+            return true;
         }
+        return false;
     }
 
     @SuppressWarnings("unchecked")

@@ -37,6 +37,12 @@
             </properties>
         </profile>
         <profile>
+            <id>bandejao</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.bandejao.DispensadorApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
             <id>pilhavetor-demo</id>
             <properties>
                 <exec.mainClass>br.com.edl20262.aplicacoes.PilhaVetorDemoApplication</exec.mainClass>
