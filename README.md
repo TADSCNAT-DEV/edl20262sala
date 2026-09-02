@@ -5,7 +5,7 @@ Repositório da disciplina de Estrutura de Dados Lineares para o curso de Tecnol
 Este projeto usa Maven para compilar e executar aplicações Java que demonstram estruturas de dados lineares implementadas do zero (Lista, Pilha e Fila encadeadas).
 
 ### Requisitos
-- Java 17+
+- Java 11+
 - Maven 3.9+
 
 ### Compilar o projeto

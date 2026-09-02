@@ -10,8 +10,8 @@
     <description>Projeto base para demonstrações de estruturas de dados lineares em Java.</description>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <exec.mainClass>br.com.edl20262.aplicacoes.ListaDemoApplication</exec.mainClass>
     </properties>
@@ -35,6 +35,19 @@
             <properties>
                 <exec.mainClass>br.com.edl20262.aplicacoes.ListaDemoApplication</exec.mainClass>
             </properties>
+        </profile>
+        <profile>
+            <id>pilhavetor-demo</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.PilhaVetorDemoApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
+            <id>pilha-ex04</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.expressoes.ExpressaoApplication</exec.mainClass>
+            </properties>
+            
         </profile>
         <profile>
             <id>pilha-demo</id>
