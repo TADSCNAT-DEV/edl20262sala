@@ -56,9 +56,9 @@
             
         </profile>
         <profile>
-            <id>pilha-demo</id>
+            <id>validador-html</id>
             <properties>
-                <exec.mainClass>br.com.edl20262.aplicacoes.PilhaDemoApplication</exec.mainClass>
+                <exec.mainClass>br.com.edl20262.aplicacoes.lista01.validadorhtml.ValidadorHTML</exec.mainClass>
             </properties>
         </profile>
         <profile>
