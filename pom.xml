@@ -64,7 +64,7 @@
         <profile>
             <id>fila-demo</id>
             <properties>
-                <exec.mainClass>br.com.edl20262.aplicacoes.FilaDemoApplication</exec.mainClass>
+                <exec.mainClass>br.com.edl20262.aplicacoes.FilaVetorDemoApplication</exec.mainClass>
             </properties>
         </profile>
     </profiles>

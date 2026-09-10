@@ -3,8 +3,6 @@ import java.util.StringTokenizer;
 
 import br.com.edl20262.estruturas.PilhaVetor;
 public class ValidadorHTML {
-   
-
 
     public static boolean validar(String html){
         StringTokenizer st = new StringTokenizer(html, ">", true);
