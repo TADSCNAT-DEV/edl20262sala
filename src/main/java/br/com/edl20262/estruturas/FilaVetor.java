@@ -20,7 +20,6 @@ public class FilaVetor<T> {
     public boolean estaCheia(){
         return quantidade==dados.length;
     }
-
     public void enfileirar(T elemento){
         if (this.estaCheia()) throw new IllegalStateException("Fila Cheia");
         this.dados[this.fim]=elemento;

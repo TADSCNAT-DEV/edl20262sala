@@ -37,6 +37,12 @@
             </properties>
         </profile>
         <profile>
+            <id>impressora</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.impressao.ImpressoraApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
             <id>bandejao</id>
             <properties>
                 <exec.mainClass>br.com.edl20262.aplicacoes.bandejao.DispensadorApplication</exec.mainClass>
@@ -49,9 +55,21 @@
             </properties>
         </profile>
         <profile>
+            <id>deque</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.DequeDemoApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
             <id>pilha-ex04</id>
             <properties>
                 <exec.mainClass>br.com.edl20262.aplicacoes.expressoes.ExpressaoApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
+            <id>historico</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.historico.HistoricoNavegacao</exec.mainClass>
             </properties>
             
         </profile>
