@@ -3,12 +3,16 @@ package br.com.edl20262.estruturas;
 public class ListaEncadeada<T> {
 
     private No<T> inicio;
+    private No<T> fim;
     private int tamanho;
-
+    public ListaEncadeada(){
+        inicio=null;
+        fim=null;
+        tamanho=0;
+    }
     public void adicionar(T valor) {
         adicionar(tamanho, valor);
     }
-
     public void adicionar(int indice, T valor) {
         validarIndiceParaAdicionar(indice);
 
@@ -17,13 +21,39 @@ public class ListaEncadeada<T> {
         if (indice == 0) {
             novoNo.proximo = inicio;
             inicio = novoNo;
+            fim=novoNo;
         } else {
             No<T> anterior = obterNo(indice - 1);
             novoNo.proximo = anterior.proximo;
             anterior.proximo = novoNo;
         }
 
+        if (indice==tamanho){
+            fim=novoNo;
+        }
+
         tamanho++;
+    }
+    public T remover(int indice){
+        No<T> atual = inicio;
+        No<T> anterior=null;
+        for (int i = 0; i < indice; i++) {
+            anterior=atual;
+            atual = atual.proximo;
+        }
+        T dado=atual.valor;
+        if (atual==inicio && atual==fim){
+            inicio=atual.proximo;
+            fim=inicio;
+        }else if(atual==inicio){
+            inicio=atual.proximo;
+        }else if (atual==fim){
+            fim=atual.proximo;
+        }else{
+             anterior.proximo=atual.proximo;
+        }
+        tamanho--;
+        return dado;
     }
 
     public T obter(int indice) {

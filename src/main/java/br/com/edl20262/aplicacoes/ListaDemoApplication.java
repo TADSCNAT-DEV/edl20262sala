@@ -14,5 +14,9 @@ public class ListaDemoApplication {
         System.out.println("Conteúdo da lista: " + disciplinas);
         System.out.println("Primeiro elemento: " + disciplinas.obter(0));
         System.out.println("Quantidade de elementos: " + disciplinas.tamanho());
+
+        String disc=disciplinas.remover(1);
+        System.out.println(disc);
+        System.out.println("Conteúdo da lista: " + disciplinas);
     }
 }
