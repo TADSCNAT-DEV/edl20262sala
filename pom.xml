@@ -37,6 +37,12 @@
             </properties>
         </profile>
         <profile>
+            <id>biblio</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.biblioteca.BibliotecaApplication</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
             <id>impressora</id>
             <properties>
                 <exec.mainClass>br.com.edl20262.aplicacoes.impressao.ImpressoraApplication</exec.mainClass>
