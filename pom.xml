@@ -31,6 +31,12 @@
 
     <profiles>
         <profile>
+            <id>filaimpressora</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.impressoraapp.Impressora</exec.mainClass>
+            </properties>
+        </profile>
+        <profile>
             <id>lista-demo</id>
             <properties>
                 <exec.mainClass>br.com.edl20262.aplicacoes.ListaDemoApplication</exec.mainClass>
