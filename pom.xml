@@ -103,5 +103,11 @@
                 <exec.mainClass>br.com.edl20262.aplicacoes.FilaVetorDemoApplication</exec.mainClass>
             </properties>
         </profile>
+        <profile>
+            <id>versao</id>
+            <properties>
+                <exec.mainClass>br.com.edl20262.aplicacoes.versionador.VersionadorAPP</exec.mainClass>
+            </properties>
+        </profile>
     </profiles>
 </project>

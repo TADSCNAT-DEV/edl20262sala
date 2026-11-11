@@ -2,7 +2,7 @@ package br.com.edl20262.estruturas;
 
 public class ArvoreBinaria {
 
-private static class No {
+    private static class No {
         int valor;
         No esq, dir;
         No(int valor) { this.valor = valor; }
@@ -16,7 +16,10 @@ private static class No {
         }
         No atual = raiz;
         while (true) {
-            if (valor == atual.valor) return false;
+            if (valor == atual.valor) {
+                return false;
+            }
+                
             if (valor < atual.valor) {
                 if (atual.esq == null) {
                     atual.esq = new No(valor);
@@ -40,6 +43,17 @@ private static class No {
             atual = valor < atual.valor ? atual.esq : atual.dir;
         }
         return false;
+    }
+
+    public int procuraVersao(int valor){
+        No atual=raiz;
+        int versao=raiz.valor;
+        while (atual != null) {
+            if(atual.valor<valor)
+                versao=atual.valor;
+            atual = valor < atual.valor ? atual.esq : atual.dir;
+        }
+        return versao;
     }
 
     public boolean remover(int valor) {
