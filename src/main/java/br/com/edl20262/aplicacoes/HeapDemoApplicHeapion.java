@@ -1,6 +1,6 @@
 package br.com.edl20262.aplicacoes;
 import br.com.edl20262.estruturas.Heap;
-public class HeapDempApplicHeapion {
+public class HeapDemoApplicHeapion {
     public static void main(String[] args) {
         Heap<Integer> minimo = new Heap<>(10, Integer::compare);
 
